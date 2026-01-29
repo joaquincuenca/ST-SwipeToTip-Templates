@@ -2,7 +2,6 @@
 
 A modern, responsive landing page for SwipeToTip's template download feature. Built with React, Vite, and Tailwind CSS.
 
-![SwipeToTip Templates](https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=400&fit=crop&q=80)
 
 ## 🚀 Features
 
