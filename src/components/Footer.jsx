@@ -41,9 +41,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#050815] pt-20 pb-8 px-6 mt-20">
       <div className="container mx-auto">
-        {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
-          {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-accent1 to-accent3 rounded-lg flex items-center justify-center">
@@ -68,7 +66,6 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Product Links */}
           <div>
             <h3 className="text-white font-bold mb-4">Product</h3>
             <ul className="space-y-3">
@@ -85,7 +82,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources Links */}
           <div>
             <h3 className="text-white font-bold mb-4">Resources</h3>
             <ul className="space-y-3">
@@ -102,7 +98,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal Links */}
           <div>
             <h3 className="text-white font-bold mb-4">Legal</h3>
             <ul className="space-y-3">
@@ -122,7 +117,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
         <div className="glass rounded-2xl p-8 mb-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
@@ -144,17 +138,13 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-white/10 mb-8" />
 
-        {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Copyright */}
           <div className="text-gray-400 text-sm flex items-center space-x-2">
             <span>© {currentYear} SwipeToTip Templates.</span>
           </div>
 
-          {/* Social Links */}
           <div className="flex items-center space-x-4">
             {socialLinks.map((social, index) => (
               <a
@@ -171,7 +161,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Extra Info */}
         <div className="text-center mt-8 text-gray-500 text-xs">
           <p>
             All templates are provided as-is and require customization. Payment processing through
