@@ -28,7 +28,6 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-gradient-to-br from-accent1 to-accent3 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">ST</span>
@@ -38,7 +37,6 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           <button
             onClick={() => scrollToSection('templates')}
@@ -74,7 +72,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -83,7 +80,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden glass mt-4 mx-6 rounded-2xl p-6 space-y-4">
           <button

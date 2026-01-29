@@ -22,9 +22,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Gradient Orbs */}
         <div
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent1/20 rounded-full blur-3xl animate-float"
           style={{
@@ -46,7 +44,6 @@ const Hero = () => {
           }}
         />
 
-        {/* Grid Pattern */}
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -59,27 +56,18 @@ const Hero = () => {
         />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 w-full px-6 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full mb-8 fade-in">
-          <span className="text-sm font-mono">Professional Templates • Ready to Use</span>
-        </div>
-
-        {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 fade-in stagger-1">
           <span className="gradient-text">Transform</span> Your
           <br />
           Tipping Experience
         </h1>
 
-        {/* Subheading */}
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto fade-in stagger-2">
           Download professional SwipeToTip templates designed for restaurants, cafés, and bars.
           Start accepting tips in minutes with our pre-built, customizable designs.
         </p>
 
-        {/* Stats */}
         <div className="flex flex-wrap justify-center gap-8 mb-12 fade-in stagger-3">
           <div className="text-center">
             <div className="text-4xl font-bold text-accent1">10+</div>
@@ -95,7 +83,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in stagger-4">
           <button
             onClick={scrollToTemplates}
@@ -115,7 +102,6 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 fade-in stagger-5">
           <div className="flex flex-col items-center animate-bounce">
             <span className="text-sm text-gray-400 mb-2">Scroll to explore</span>

@@ -101,7 +101,6 @@ const Features = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full mb-6">
-            <Sparkles className="w-4 h-4 text-accent3" />
             <span className="text-sm font-mono">Why Choose Our Templates</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
