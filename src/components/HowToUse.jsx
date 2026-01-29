@@ -88,14 +88,12 @@ const HowToUse = () => {
       ref={sectionRef}
       className="py-20 px-6 relative overflow-hidden"
     >
-      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden opacity-30">
         <div className="absolute top-1/4 -left-20 w-96 h-96 bg-accent2/30 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-accent1/30 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto relative z-10">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="gradient-text">How It Works</span>
@@ -105,13 +103,10 @@ const HowToUse = () => {
           </p>
         </div>
 
-        {/* Desktop Timeline View */}
         <div className="hidden lg:block mb-20">
-          {/* Timeline Line */}
           <div className="relative">
             <div className="absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-accent1 via-accent2 via-accent3 to-accent4" />
             
-            {/* Steps */}
             <div className="grid grid-cols-4 gap-8">
               {steps.map((step, index) => (
                 <div
@@ -120,7 +115,6 @@ const HowToUse = () => {
                   style={{ animationDelay: `${index * 0.15}s` }}
                   onMouseEnter={() => setActiveStep(index)}
                 >
-                  {/* Timeline Node */}
                   <div
                     className="w-48 h-48 mx-auto rounded-full flex items-center justify-center mb-8 glass relative z-10 transition-all duration-300 hover:scale-110"
                     style={{
@@ -133,7 +127,6 @@ const HowToUse = () => {
                     </div>
                   </div>
 
-                  {/* Number Badge */}
                   <div
                     className="absolute top-0 right-0 w-12 h-12 rounded-full flex items-center justify-center font-mono font-bold text-lg"
                     style={{ backgroundColor: step.color }}
@@ -141,12 +134,10 @@ const HowToUse = () => {
                     {step.number}
                   </div>
 
-                  {/* Content */}
                   <div className="text-center">
                     <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                     <p className="text-gray-400 text-sm mb-4">{step.description}</p>
                     
-                    {/* Details */}
                     {activeStep === index && (
                       <div className="glass rounded-xl p-4 mt-4 animate-slide-up">
                         <ul className="space-y-2 text-left text-sm">
@@ -166,7 +157,6 @@ const HowToUse = () => {
           </div>
         </div>
 
-        {/* Mobile Accordion View */}
         <div className="lg:hidden space-y-6">
           {steps.map((step, index) => (
             <div
@@ -178,7 +168,6 @@ const HowToUse = () => {
                 onClick={() => setActiveStep(activeStep === index ? -1 : index)}
                 className="w-full p-6 flex items-center space-x-4 text-left"
               >
-                {/* Icon */}
                 <div
                   className="w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{
@@ -189,7 +178,6 @@ const HowToUse = () => {
                   {step.icon}
                 </div>
 
-                {/* Content */}
                 <div className="flex-1">
                   <div className="flex items-center space-x-3 mb-2">
                     <span
@@ -203,7 +191,6 @@ const HowToUse = () => {
                   <p className="text-gray-400 text-sm">{step.description}</p>
                 </div>
 
-                {/* Arrow */}
                 <ArrowRight
                   className={`w-6 h-6 transition-transform ${
                     activeStep === index ? 'rotate-90' : ''
@@ -211,7 +198,6 @@ const HowToUse = () => {
                 />
               </button>
 
-              {/* Expanded Details */}
               {activeStep === index && (
                 <div className="px-6 pb-6">
                   <div className="border-t border-white/10 pt-4">
